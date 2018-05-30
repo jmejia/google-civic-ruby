@@ -1,7 +1,7 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "google/civic/ruby/version"
+require "google-civic/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "google-civic-ruby"
@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Josh Mejia"]
   spec.email         = ["joshua.mejia@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{A simple wrapper for the Google Civic API.}
+  spec.description   = %q{Primary purpose is to interface with the Google Civic API. The gem was built to make accessing civic data easier with newer devs in mind. If you are looking for something more robust, try the `google-api-ruby-client` built by Google.}
+  spec.homepage      = "https://github.com/jmejia/google-civic-ruby"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -35,4 +35,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "byebug", "~> 10.0"
 end
